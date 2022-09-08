@@ -1,0 +1,133 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.6;
+  background-color: #111;
+}
+
+.nav {
+  position: fixed;
+  top: 18rem;
+  right: 30px;
+}
+.nav .verticalnav li {
+  list-style: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  margin: 20px 0;
+  border-radius: 50%;
+  background: #2b2a2a;
+  cursor: pointer;
+}
+.nav .verticalnav li:hover {
+  background-color: #ffb400;
+}
+.nav .verticalnav li:hover h2 {
+  opacity: 1;
+  transition: all 0.3s;
+  right: 27px;
+  background-color: #ffb400;
+  border-radius: 30px 0 0 30px;
+  margin: 0;
+  text-align: center;
+}
+.nav .verticalnav li a {
+  background: transparent;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+.nav .verticalnav li a i {
+  font-size: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  top: 15px;
+  color: #fff;
+  position: absolute;
+}
+.nav .verticalnav li a h2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 0 25px 0 30px;
+  opacity: 0;
+  height: 50px;
+  line-height: 50px;
+  z-index: -1;
+  color: #fff;
+  transition: all 0.3s;
+  border-radius: 30px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.nav .verticalnav li a .home {
+  width: 9em;
+}
+.nav .verticalnav li a:hover {
+  opacity: 1;
+  transition: all 0.3s;
+  right: 27px;
+  margin: 0;
+  text-align: center;
+}
+.nav .verticalnav .slide {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+#designer .container-home .color-block {
+  background-color: #ffb400;
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  left: -83%;
+  top: -50%;
+  transform: rotate(-15deg);
+}
+#designer .image img {
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: calc(100vh - 80px);
+  z-index: 1;
+  border-radius: 30px;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  box-shadow: 0 0 7px rgb(0, 0, 0);
+}
+#designer .col-lg-8 h1 {
+  font-size: 51px;
+  line-height: 62px;
+  font-weight: 700;
+  margin: 18px 0 10px;
+  position: relative;
+  padding-left: 70px;
+}
+#designer .col-lg-8 span {
+  color: #ffb400;
+}/*# sourceMappingURL=style.css.map */
