@@ -38,11 +38,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/about.css" />
     <title>Mənim Portfolio Saytım</title>
   </head>
   <body>
-    <i class="bi bi-brightness-high" id="toggleDark"></i>
+    <i class="bi bi-brightness-high" id="toggleDark" style="color: white"></i>
     <header class="nav">
       <ul class="verticalnav">
         <li>
@@ -69,16 +70,22 @@
       <section>
         <div class="about">
           <h1>Haqqımda</h1>
-          <span class="title-bg">Xülasə</span>
         </div>
       </section>
-      <section>
+      <section id="myabout">
         <div class="container">
           <div class="row">
             <div class="col-xl-6 col-lg-5 col-12">
               <div class="row">
                 <div class="col-12">
                   <h3>ŞƏXSİ MƏLUMATLAR</h3>
+                </div>
+                <div class="col-12 d-block d-sm-none">
+                  <img
+                    src="images/0ea72a33-81e3-4b94-a977-4aebb192a424.jpg"
+                    class="img-fluid main-img-mobile"
+                    alt="about avatar"
+                  />
                 </div>
                 <ul class="about-list">
                   <li>
@@ -129,6 +136,7 @@
                     class="button"
                     href="cv/White Minimalist Simple Resume 2  (2).pdf"
                     download="cv/White Minimalist Simple Resume 2  (2).pdf"
+                    target="_blank"
                   >
                     <span class="button-text"> CV Yüklə </span>
                     <span class="button-icon fa fa-download"></span>
@@ -203,128 +211,58 @@
           </div>
         </div>
       </section>
-      <section class="skils">
-        <div class="main-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h3
-                  class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600"
-                >
-                  Mənim Biliklərim
-                </h3>
-              </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p75">
-                  <span>75%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
+      <section id="myskills">
+        <div class="row">
+          <div class="skils">
+            <div class="col-12">
+              <h1>Mənim Biliklərim</h1>
+            </div>
+            <div class="col-5">
+              <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="95"></div>
                 </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  HTML
-                </h6>
               </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p20">
-                  <span>20%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
+            </div>
+            <div class="col-5">
+              <div class="skill">
+                <div class="skill-name">C#</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="80"></div>
                 </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  JAVASCRIPT
-                </h6>
               </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p55">
-                  <span>55%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
+            </div>
+            <div class="col-5">
+              <div class="skill">
+                <div class="skill-name">CSS - SCSS</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="90"></div>
                 </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  CSS
-                </h6>
               </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p90">
-                  <span>90%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
+            </div>
+            <div class="col-5">
+              <div class="skill">
+                <div class="skill-name">MVC (ASP .Net Core)</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="70"></div>
                 </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  SASS
-                </h6>
               </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p95">
-                  <span>95%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
+            </div>
+            <div class="col-5">
+              <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="35"></div>
                 </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  C#
-                </h6>
               </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p15">
-                  <span>15%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
+            </div>
+            <div class="col-5">
+              <div class="skill">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar">
+                  <div class="skill-per" per="75"></div>
                 </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  JQUERY
-                </h6>
-              </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p85">
-                  <span>85%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
-                </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  MVC
-                </h6>
-              </div>
-              <div class="col-6 col-md-3 mb-3 mb-sm-5">
-                <div class="c100 p20">
-                  <span>20%</span>
-                  <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                  </div>
-                </div>
-                <h6
-                  class="text-uppercase open-sans-font text-center mt-2 mt-sm-4"
-                >
-                  API
-                </h6>
               </div>
             </div>
           </div>

@@ -23,7 +23,7 @@
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
-      height: calc(100vh - 80px);
+      height: calc(100vh - 120px);
       z-index: 1;
       border-radius: 30px;
       position: relative;
@@ -82,7 +82,7 @@
         font-size: 15px;
         font-weight: 600;
         color: #fff;
-        background-color: transparent;
+        background: rgba(46, 57, 69, 0.3);
         outline: none !important;
         cursor: pointer !important;
         margin: 0;
@@ -126,6 +126,149 @@
     }
     span {
       color: #ffb400;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        h1 {
+          font-size: 42px;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        h1 {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #designer {
+    .col-lg-8 {
+      text-align: left !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        h1 {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) and (min-width: 992px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        max-width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        max-width: 550px;
+        text-align: center;
+        padding-left: 5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #designer {
+    .image {
+      img {
+        border-radius: 50%;
+        width: 270px;
+        height: 270px;
+        border: 4px solid #252525;
+        margin: 0 auto;
+        position: relative;
+        top: -18rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #designer {
+    .image {
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #designer {
+    .image {
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #designer {
+    .container-home {
+      .home-details-container {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        h1 {
+          font-size: 38px;
+          line-height: 48px;
+          margin: 29px 0 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #designer {
+    .col-lg-8 {
+      .hometext {
+        p {
+          margin: 10px 0 23px;
+          font-size: 15px;
+          line-height: 30px;
+        }
+      }
     }
   }
 }

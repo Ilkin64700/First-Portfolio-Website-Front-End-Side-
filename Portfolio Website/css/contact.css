@@ -11,9 +11,6 @@ body {
   width: 100%;
   background-color: #111;
 }
-body .light {
-  color: #666;
-}
 
 .nav {
   position: fixed;
@@ -115,6 +112,41 @@ body .light {
   cursor: pointer;
 }
 
+@media screen and (max-width: 992px) {
+  body .nav {
+    left: 0;
+    right: auto;
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 100%;
+    display: block;
+    background: #2b2a2a;
+    padding: 8px;
+    z-index: 10;
+  }
+  body .nav .verticalnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+  body .nav .verticalnav li {
+    margin: 0 !important;
+    width: 45px !important;
+    height: 45px !important;
+    background: #444 !important;
+  }
+  body .nav .verticalnav li a i {
+    top: 14px;
+  }
+  body .nav .verticalnav li a h2 {
+    display: none;
+  }
+  body .nav .verticalnav li:hover a {
+    background-color: #ffb400;
+  }
+}
 .contact {
   width: 100%;
   text-align: center;
@@ -169,6 +201,7 @@ body .light {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  color: #666;
 }
 .container .row .col-12 .mb-5 li {
   display: inline-block;
@@ -234,7 +267,7 @@ body .light {
   transition: 0.3s;
   padding-top: 30px;
 }
-.container .row .col-lg-8 .contactform .row .col-12 button {
+.container .row .col-lg-8 .contactform .row .col-12 .button {
   overflow: hidden;
   display: inline-block;
   line-height: 1.4;
@@ -257,17 +290,29 @@ body .light {
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  background-color: transparent;
+  background-color: rgba(46, 57, 69, 0.3);
   outline: none !important;
   cursor: pointer !important;
 }
-.container .row .col-lg-8 .contactform .row .col-12 button .button-text {
+.container .row .col-lg-8 .contactform .row .col-12 .button::before {
+  background-color: #ffb400;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.3s ease-out;
+}
+.container .row .col-lg-8 .contactform .row .col-12 .button .button-text {
   position: relative;
   z-index: 2;
   color: #fff;
   transition: all 0.3s ease-out;
 }
-.container .row .col-lg-8 .contactform .row .col-12 button .fa-share {
+.container .row .col-lg-8 .contactform .row .col-12 .button .button-icon {
   background-color: #ffb400;
   position: absolute;
   right: -1px;
@@ -281,4 +326,21 @@ body .light {
   font-size: 19px;
   color: #fff;
   border-radius: 50%;
+}
+.container .row .col-lg-8 .contactform .row .col-12 .button .fa-send::before {
+  content: "\f1d8";
+}
+.container .row .col-lg-8 .contactform .row .col-12 .button:hover::before {
+  transform: translateX(0);
+}
+.container .row .col-lg-8 .contactform .row .navdistance {
+  padding-top: 30px;
+  padding-bottom: 6rem;
+}
+
+@media screen and (min-width: 576px) {
+  #contact .container .row .col-lg-8 {
+    margin-left: -30px;
+    padding-left: 25px;
+  }
 }/*# sourceMappingURL=contact.css.map */
